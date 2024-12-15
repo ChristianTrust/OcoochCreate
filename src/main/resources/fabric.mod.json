@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "ocoochcreate",
+  "version": "${version}",
+  "name": "Ocooch Create",
+  "description": "Processing simulation for Ocooch",
+  "authors": [
+    "Christian"
+  ],
+  "contact": {
+    "sources": "https://github.com/Fabricators-of-Create/create-fabric-addon-template"
+  },
+  "license": "CC0",
+  "icon": "assets/ocoochcreate/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.christian.ocoochcreate.OcoochCreate"
+    ],
+    "client": [
+      "com.christian.ocoochcreate.OcoochCreateClient"
+    ],
+    "fabric-datagen": [
+      "com.christian.ocoochcreate.OcoochCreateData"
+    ]
+  },
+  "mixins": [
+    "ocoochcreate.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${fabric_loader_version}",
+    "fabric-api": ">=${fabric_api_version}",
+    "create": "${create_version}",
+    "minecraft": "${minecraft_version}"
+  }
+}
