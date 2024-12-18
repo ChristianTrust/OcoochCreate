@@ -12,8 +12,8 @@ public class OcoochItems {
 	public static final ItemEntry<PaperAirplaneItem> PAPER_AIRPLANE =
 			REGISTRATE.item("paper_airplane", PaperAirplaneItem::new)
 					.register();
-	public static final ItemEntry<Item> PAPER_FOLDING =
-			REGISTRATE.item("paper_folding", Item::new)
+	public static final ItemEntry<SequencedAssemblyItem> PAPER_FOLDING =
+			REGISTRATE.item("paper_folding", SequencedAssemblyItem::new)
 					.register();
 
 	public static void register() {}
