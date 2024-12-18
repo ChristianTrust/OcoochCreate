@@ -21,7 +21,7 @@
       "com.christian.ocoochcreate.OcoochCreateClient"
     ],
     "fabric-datagen": [
-      "com.christian.ocoochcreate.OcoochCreateData"
+      "com.christian.ocoochcreate.data.OcoochCreateDatagen"
     ]
   },
   "mixins": [

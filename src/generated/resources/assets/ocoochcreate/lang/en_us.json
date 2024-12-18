@@ -1,3 +1,5 @@
 {
-  "item.ocoochcreate.paper_airplane": "Paper Airplane"
+  "entity.ocoochcreate.paper_airplane_entity": "Paper Airplane Entity",
+  "item.ocoochcreate.paper_airplane": "Paper Airplane",
+  "item.ocoochcreate.paper_folding": "Paper Folding"
 }

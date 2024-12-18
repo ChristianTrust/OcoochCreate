@@ -3,10 +3,10 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "ocoochcreate:paper_folding"
+      "item": "minecraft:paper"
     }
   ],
   "result": {
-    "item": "ocoochcreate:paper_airplane"
+    "item": "ocoochcreate:paper_folding"
   }
 }

@@ -1,0 +1,30 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:paper"
+  },
+  "loops": 5,
+  "results": [
+    {
+      "item": "ocoochcreate:paper_airplane"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "ocoochcreate:paper_folding"
+        }
+      ],
+      "results": [
+        {
+          "item": "ocoochcreate:paper_folding"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "ocoochcreate:paper_folding"
+  }
+}
