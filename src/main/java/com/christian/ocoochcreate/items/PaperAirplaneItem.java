@@ -1,7 +1,5 @@
 package com.christian.ocoochcreate.items;
 
-import com.christian.ocoochcreate.entity.PaperAirplaneEntity;
-
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
@@ -18,7 +16,9 @@ public class PaperAirplaneItem extends Item {
 
 	public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
 		ItemStack itemStack = player.getItemInHand(usedHand);
-		level.playSound((Player) null, player.getX(), player.getY(), player.getZ(), SoundEvents.SNOWBALL_THROW, SoundSource.NEUTRAL, 0.5F, 0.4F / (level.getRandom().nextFloat() * 0.4F + 0.8F));
+		level.playSound((Player) null, player.getX(), player.getY(), player.getZ(),
+				SoundEvents.SNOWBALL_THROW,
+				SoundSource.NEUTRAL, 0.5F, 0.4F / (level.getRandom().nextFloat() * 0.4F + 0.8F));
 		if (!level.isClientSide) {
 			Snowball snowball = new Snowball(level, player);
 			snowball.setItem(itemStack);

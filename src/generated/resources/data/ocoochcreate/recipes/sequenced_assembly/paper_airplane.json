@@ -11,20 +11,20 @@
   ],
   "sequence": [
     {
-      "type": "create:deploying",
+      "type": "create:pressing",
       "ingredients": [
         {
-          "item": "ocoochcreate:paper_folding"
+          "item": "ocoochcreate:incomplete_paper_folding"
         }
       ],
       "results": [
         {
-          "item": "ocoochcreate:paper_folding"
+          "item": "ocoochcreate:incomplete_paper_folding"
         }
       ]
     }
   ],
   "transitionalItem": {
-    "item": "ocoochcreate:paper_folding"
+    "item": "ocoochcreate:incomplete_paper_folding"
   }
 }

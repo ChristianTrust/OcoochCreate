@@ -3,8 +3,11 @@ plugins {
 	id "maven-publish"
 }
 
-base.archivesName = archives_base_name
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
+
 group = project.maven_group
+archivesBaseName = "ocoochcreate"
 
 // Formats the mod version to include the Minecraft version and build number (if present)
 // example: 1.0.0+1.18.2-build.100
@@ -120,13 +123,10 @@ processResources {
 
 java {
 	withSourcesJar()
-
-	sourceCompatibility = JavaVersion.VERSION_17
-	targetCompatibility = JavaVersion.VERSION_17
 }
 
 jar {
 	from("LICENSE") {
-		rename { "${it}_${project.archivesBaseName}" }
+		rename { "${it}_$archivesBaseName" }
 	}
 }

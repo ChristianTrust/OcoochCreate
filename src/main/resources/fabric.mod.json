@@ -24,13 +24,10 @@
       "com.christian.ocoochcreate.data.OcoochCreateDatagen"
     ]
   },
-  "mixins": [
-    "ocoochcreate.mixins.json"
-  ],
   "depends": {
     "fabricloader": ">=${fabric_loader_version}",
     "fabric-api": ">=${fabric_api_version}",
-    "create": "${create_version}",
+    "create": "*",
     "minecraft": "${minecraft_version}"
   }
 }

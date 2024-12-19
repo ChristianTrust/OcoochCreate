@@ -12,6 +12,24 @@ import net.minecraft.world.item.CreativeModeTab;
 
 public class OcoochCreativeModeTab{
 
+	//private static final TabInfo OCOOCH_CREATIVE_TAB = register("base",
+	//		() -> FabricItemGroup.builder()
+	//		.title(Components.translatable("Ocooch"))
+	//		.icon(OcoochItems.PAPER_AIRPLANE::asStack)
+	//		.build());
+	//
+	//private static TabInfo register(String name, Supplier<CreativeModeTab> supplier) {
+	//	ResourceLocation id = OcoochCreate.asResource(name);
+	//	ResourceKey<CreativeModeTab> key = ResourceKey.create(Registries.CREATIVE_MODE_TAB, id);
+	//	CreativeModeTab tab = supplier.get();
+	//	Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, key, tab);
+	//	return new TabInfo(key, tab);
+	//}
+	//
+	//public record TabInfo(ResourceKey<CreativeModeTab> key, CreativeModeTab tab) {
+	//}
+
+
 	private static final CreativeModeTab OCOOCH_CREATIVE_TAB = FabricItemGroup.builder()
 			.title(Components.translatable("itemGroup.ocoochcreate.main"))
 			.icon(OcoochItems.PAPER_AIRPLANE::asStack)
