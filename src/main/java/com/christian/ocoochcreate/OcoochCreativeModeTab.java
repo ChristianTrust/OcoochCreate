@@ -1,6 +1,7 @@
 package com.christian.ocoochcreate;
 
-import com.christian.ocoochcreate.registry.OcoochItems;
+import com.christian.ocoochcreate.registry.BlockRegistry;
+import com.christian.ocoochcreate.registry.ItemRegistry;
 import com.simibubi.create.foundation.utility.Components;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
@@ -31,8 +32,8 @@ public class OcoochCreativeModeTab{
 
 
 	private static final CreativeModeTab OCOOCH_CREATIVE_TAB = FabricItemGroup.builder()
-			.title(Components.translatable("itemGroup.ocoochcreate.main"))
-			.icon(OcoochItems.PAPER_AIRPLANE::asStack)
+			.title(Components.literal("Ocooch"))
+			.icon(ItemRegistry.PAPER_AIRPLANE::asStack)
 			.build();
 
 	public static void register() {
@@ -42,8 +43,9 @@ public class OcoochCreativeModeTab{
 
 	private static void make(CreativeModeTab creativeModeTab, FabricItemGroupEntries entries) {
 		if (creativeModeTab == OCOOCH_CREATIVE_TAB) {
-			entries.accept(OcoochItems.PAPER_AIRPLANE);
-			entries.accept(OcoochItems.PAPER_FOLDING);
+			entries.accept(ItemRegistry.PAPER_AIRPLANE);
+			entries.accept(ItemRegistry.PAPER_FOLDING);
+			entries.accept(BlockRegistry.TEST_LUMBER);
 		}
 	}
 

@@ -8,7 +8,7 @@ import net.minecraft.world.item.Item;
 
 import static com.christian.ocoochcreate.OcoochCreate.REGISTRATE;
 
-public class OcoochItems {
+public class ItemRegistry {
 
 	public static final ItemEntry<PaperAirplaneItem> PAPER_AIRPLANE =
 			REGISTRATE.item("paper_airplane", PaperAirplaneItem::new)

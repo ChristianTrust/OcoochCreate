@@ -1,7 +1,7 @@
 package com.christian.ocoochcreate.data;
 
 import com.christian.ocoochcreate.OcoochCreate;
-import com.christian.ocoochcreate.registry.OcoochItems;
+import com.christian.ocoochcreate.registry.ItemRegistry;
 import com.simibubi.create.content.kinetics.press.PressingRecipe;
 import com.simibubi.create.content.processing.sequenced.SequencedAssemblyRecipeBuilder;
 import com.simibubi.create.foundation.data.recipe.CreateRecipeProvider;
@@ -17,8 +17,8 @@ public class OcoochSequencedAssemblyRecipeGen extends CreateRecipeProvider {
 
 	PAPER_AIRPLANE = ocoochCreate("paper_airplane",
 			b -> b.require(Items.PAPER)
-			.transitionTo(OcoochItems.INCOMPLETE_PAPER_FOLDING.get())
-			.addOutput(OcoochItems.PAPER_AIRPLANE.get(), 1)
+			.transitionTo(ItemRegistry.INCOMPLETE_PAPER_FOLDING.get())
+			.addOutput(ItemRegistry.PAPER_AIRPLANE.get(), 1)
 			.loops(5)
 					.addStep(PressingRecipe::new, rb -> rb));
 

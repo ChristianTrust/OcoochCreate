@@ -8,7 +8,7 @@ import net.minecraft.world.entity.MobCategory;
 
 import static com.christian.ocoochcreate.OcoochCreate.REGISTRATE;
 
-public class OcoochEntity {
+public class EntityRegistry {
 
 	public static final EntityEntry<PaperAirplaneEntity> PAPER_AIRPLANE_PROJECTILE =
 			REGISTRATE.entity("paper_airplane_entity", PaperAirplaneEntity::new, MobCategory.MISC)
